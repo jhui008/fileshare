@@ -33,7 +33,7 @@ def human_filesize(size):
         return "%.1f M" % (size / 1024 / 1024)
     if size < 1024 * 1024 * 1024 * 1024:
         return "%.1f G" % (size / 1024 / 1024 / 1024)
-    return '%d B' % size
+    return '%.1f T' % (size / 1024 / 1024 / 1024 / 1024) 
 
 
 @app.route('/')
